@@ -147,17 +147,18 @@
           alt="firefox addons">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img srcset="./originals/mdn, ./originals/mdn"
-          src="./originals/mdn.svg"
-          alt="mdn">
+          <img src="./originals/mdn.svg"
+            alt = "white dinosaur"
+            srcset="./originals/mdn.svg">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
         <picture>
-            <source srcset="./originals/redpanda600.png, 600w, ./originals/redpanda1200.png 1200w"
-            media="orientation">
+            <source media ="(max-width: 600px)" srcset="./originals/redpanda600.png">
+            <source media ="(min-width: 601px)" srcset="./originals/redpanda1200.png">
+            <img src="./originals/redpanda1200.png" alt="The red panda">
         </picture>
       </div>
 
