@@ -46,13 +46,16 @@
       a:hover {
         text-decoration: none;
         color: green;
+      }
+      
+      ul {
         
       }
     </style>
   </head>
 
   <body>
-    <h1>Jane Doe</h1>
+    <h1>Lithasha Thanippuli Appuhamilage</h1>
     <div class="job-title">Web Developer</div>
     <p>
       Far far away, behind the word mountains, far from the countries Vokalia
