@@ -1,0 +1,48 @@
+/*
+    Name: Lithasha Thanippuli Appuhamilage 
+    Student No: 100942619
+    Section: 6
+    File: Assignment #3 P1
+    Date: June 20th, 2024
+    Description: This is the assignment #3 part 1; which is the CSS file of the styling a biography page.
+  */
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+    margin: 0;
+  }
+
+  h1 {
+    color: hotpink;
+    font-size: 2em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    border-bottom: 10px dotted purple;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    font-style: italic;
+  }
+
+  .job-title {
+    color: #999999;
+    font-weight: bold;
+  }
+
+  a:link,
+  a:visited {
+    color: #fb6542;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: green;
+  }
+  
+  ul {
+    background-color: #eeeeee ;
+    border: 5px solid purple;
+    padding: 3em;
+  }
