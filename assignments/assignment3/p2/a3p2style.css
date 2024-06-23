@@ -8,6 +8,11 @@
 
 html {
   font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Your CSS below here */
@@ -16,5 +21,9 @@ html {
   height: 150px;
   line-height: 9;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
+
 }
