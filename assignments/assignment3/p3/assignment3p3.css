@@ -10,48 +10,53 @@
 
 
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0 auto;
-    min-width: 1000px;
-    max-width: 1400px;
-  }
-  
-  /* Layout */
-  
-  section {
-    float: left;
-    width: 50%;
-  }
-  
-  aside {
-    float: left;
-    width: 30%;
-  }
-  
-  nav {
-    float: left;
-    width: 20%;
-  }
-  
-  footer {
-    clear: both;
-  }
-  
-  header, section, aside, nav, footer {
-    padding: 20px;
-  }
-  
-  /* header and footer */
-  
-  header, footer {
-    border-top: 5px solid #a66;
-    border-bottom: 5px solid #a66;
-  }
-  
-  /* WRITE YOUR CODE BELOW HERE */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
 
 
 /* general styling */
@@ -60,40 +65,35 @@
 
 
 @font-face {
-  font-family: 'crete_roundregular';
-  src: url('fonts2/creteround-regular-webfont.eot');
-  src: url('fonts2/creteround-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts2/creteround-regular-webfont.woff2') format('woff2'),
-       url('fonts2/creteround-regular-webfont.woff') format('woff'),
-       url('fonts2/creteround-regular-webfont.ttf') format('truetype'),
-       url('fonts2/creteround-regular-webfont.svg#crete_roundregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-
+  font-family: 'znikomitregular';
+  src: url('font/znikomit-webfont.eot');
+  src: url('font/arcon-regular-webfont-webfont.eot') format('embedded-opentype'),
+    url('font/znikomit-webfont.woff2') format('woff2'),
+    url('font/znikomit-webfont.woff') format('woff'),
+    url('font/znikomit-webfont.ttf') format('truetype'),
+    url('font/znikomit-webfont.svg') format('svg');
 }
+
 
 @font-face {
   font-family: 'arconregular';
-  src: url('fonts2/arcon-regular-webfont.eot');
-  src: url('fonts2/arcon-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('fonts2/arcon-regular-webfont.woff2') format('woff2'),
-       url('fonts2/arcon-regular-webfont.woff') format('woff'),
-       url('fonts2/arcon-regular-webfont.ttf') format('truetype'),
-       url('fonts2/arcon-regular-webfont.svg#arconregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-
+  src: url('font/arcon-regular-webfont-webfont.eot');
+  src: url('font/arcon-regular-webfont-webfont.eot') format('embedded-opentype'),
+    url('font/arcon-regular-webfont-webfont.woff2') format('woff2'),
+    url('font/arcon-regular-webfont-webfont.woff') format('woff'),
+    url('font/arcon-regular-webfont-webfont.ttf') format('truetype'),
+    url('font/arcon-regular-webfont-webfont.svg') format('svg');
 }
 
 html {
-  font-family: 'crete_roundregular,sans-serif';
+  font-family: 'znikomitregular', sans-serif;
   font-size: 10px;
 
 }
 
 
 h1 {
-  font-family: 'crete_roundregular,sans-serif';
+  font-family: 'znikomitregular', sans-serif;
   font-size: 50px;
   text-align: center;
   letter-spacing: 3px;
@@ -101,17 +101,18 @@ h1 {
 
 
 h2 {
-  font-family: 'crete_roundregular,sans-serif';
+  font-family: 'znikomitregular', sans-serif;
   font-size: 28px;
   letter-spacing: 1px;
 }
 
 
 body {
-  font-family: 'arconregular, serif';
+  font-family: 'arconregular', monospace;
   font-size: 20px;
   letter-spacing: 1px;
   word-spacing: 1px;
+  line-height: 1.5;
 
 }
 
@@ -133,22 +134,25 @@ a[href*="http"] {
   background-size: 16px 16px;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   color: #a66;
 }
 
-a:focus, a:hover {
+a:focus,
+a:hover {
   text-decoration: none;
 }
 
 a:active {
   color: transparent;
-  text-shadow: 0px 0px 1px #f00,0px 0px 2px #f00,0px 0px 3px black,0px 0px 4px black;
+  text-shadow: 0px 0px 1px #f00, 0px 0px 2px #f00, 0px 0px 3px black, 0px 0px 4px black;
 }
 
 
 /*links*/
-ul, ol {
+ul,
+ol {
   margin: 1.6rem 0;
 }
 
@@ -182,7 +186,8 @@ nav li a {
   border: 1px solid #a66;
 }
 
-nav li a:focus, nav li a:hover {
+nav li a:focus,
+nav li a:hover {
   color: white;
   background: #a66;
 }
@@ -191,4 +196,3 @@ nav li a:active {
   color: white;
   background: black;
 }
-
