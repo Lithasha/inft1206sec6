@@ -8,12 +8,13 @@
 
 html {
   font-family: sans-serif;
-
 }
 
 /* Your CSS below here */
 .cool-box {
   width: 200px;
   height: 150px;
+  line-height: 9;
+  text-align: center;
   
 }
