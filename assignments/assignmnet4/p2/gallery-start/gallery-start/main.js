@@ -14,9 +14,10 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-
+const pictures = ["pic1.jpg","pic2.jpg","pic3.jpg","pic4.jpg","pic5.jpg"];
 
 /* Declaring the alternative text for each image file */
+const pictureNames = ["Closeup of a human eye","Painting","Purple and White Flowers","Egyption Wall Art","Butterfly on a leaf"];
 
 /* Looping through images */
 
