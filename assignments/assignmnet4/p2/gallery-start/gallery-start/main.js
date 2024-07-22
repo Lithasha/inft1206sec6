@@ -1,3 +1,12 @@
+/*
+    Name: Lithasha Thanippuli Appuhamilage.
+    Student No: 100942619.
+    Section: 6.
+    File: Assignment #4 P2.
+    Date: July 22th, 2024.
+    Description: This is the assignment #4 part 2; which is the javascrpt file of the image gallery.
+*/
+
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
