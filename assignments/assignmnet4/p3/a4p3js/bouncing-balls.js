@@ -8,6 +8,9 @@ Description: This is the assignment #4 part 3; which is the JavaScript file of t
  */
 
 // set up canvas
+const counting = document.querySelector('p');
+let count = 0;
+
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
@@ -172,6 +175,8 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+  count++;
+  counting.textContent = 'Ball count: ' + count;
 }
 
 const evilCircle = new EvilCircle(random(0, width), random(0, height));
