@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function validate() {
+            // this will trim out the spaces.if there are 0 length it will not submit the data to the surver.
+            let fname = document.querySelector('#fname').value.trim();
+            if (fname.lenght == 0) {
+                document.querySelector('#fname-error').textContent = "You must provide the value for the first name"
+                //alert("You must provide value for the first name")
+                return false;
+            }
+
+            else if (fname.lenght<5) {
+                document.querySelector('#fname-error').textContent = "First name must be at least five characters"
+                //alert("First name must be at least five characters")
+                return false;
+
+            }
+            else {
+                fname = fname.toLowerCase();
+                for(let i=0; i<fname.lenght; i++) {
+                    if(fname[i] < 'a' || fname[i] > 'z') {
+                        document.querySelector('#fname-error').textContent = "All characters in first name must be alphabet"
+                        return false;
+                    }
+                }
+            }
+
+
+            return true;
+        }
+
+    </script>
+    <title>Week 12</title>
+</head>
+<body>
+    <h1>Week 12: Introduction to Forms</h1>
+    <!--action= where you are goin to submit the data. method means how you going to submit the data. when you use "get" it will append to the url. use "post when useing sensitive data. it will not append. it will not show in the url. it will be added to the body".
+    the "onsubmit" will check wheather the information is corrent and then. if it is tru it will add the infor to the surver. if it fals eit will not-->
+    <form action="https://httpbin.org/get" method="get" onsubmit="return validate()">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" title="Enter first name">
+                <input type="text" id="lname" name="lname" size="15" placeholder="First Name" required>
+                <span id="fname-error" style="color: red;"></span>
+            </div>
+        
+            <div>
+                <!-- the default size is 20 characters-->
+                <label for="lname">Last Name:</label>
+                
+            </div>
+        </fieldset>
+
+        <div>
+            <label for=""> Password</label>
+            <input type="password" id="pass" name="pass">
+        </div>
+
+        <div>
+            <label for="">Upload the assignment</label>
+            <input type="file" id="assignment">
+        </div>
+
+        <div>
+            <p>What are your hobbies and interests</p>
+            <input type="checkbox" id="interests1" name="interests"><label for="interests1">Sports</label>
+            <input type="checkbox" id="interests2" name="interests"><label for="interests1">Music</label>
+        </div>
+
+        <div>
+            <p>Which OS do you prefer</p>
+            <input type="radio" name="os" id="os1" value="Windows" checked><label for="os1">Windows</label>
+            <input type="radio" name="os" id="os2" value="os2"><label for="os2">os2</label>
+        </div>
+
+        <div>
+            <label for="course">what is your current course?</label>
+            <input type="text" name="course" id="course" list="list1">
+            <datalist id="list1">
+                <option value="inft1206">INFT 1206</option>
+                <option value="inft2100">INFT 2100</option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="">What do you want to do this weekend</label>
+            <select name="weekend" id="weekend">
+                <option value="coffee">Drink Coffee</option>
+                <option value="book">Read a book</option>
+                <option value="walk">Take a walk</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="">How is the web developmetn going so far?</label>
+            <br>
+            <textarea name="web" id="web" rows="10" cols="30"></textarea>
+        </div>
+
+        <div>
+            what is your favourite number?
+            <!--the 'number' will only let you add a number not any other characters-->
+            <!--the "step" does increments. since this has 2 it will increment 2 -->
+            <input type="number" min="0" max="10" step="2">
+        </div>
+
+    <div>
+        <!--the submit button will submit the written answers to the server-->
+        <input type="submit">
+        <input type="reset">
+    </div>
+    </form>
+</body>
+</html>
