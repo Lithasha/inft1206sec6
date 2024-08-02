@@ -1,3 +1,11 @@
+/*
+Name: Lithasha Thanippuli Appuhamilage 
+Student No: 100942619
+Section: 6
+File: Assignment #4 P3 updated 
+Date: August 02nd, 2024
+Description: This is the assignment #4 part 3 updated; which is the JavaScript file of the bouncing - balls.
+ */
 // setup canvas
 
 const canvas = document.querySelector("canvas");
