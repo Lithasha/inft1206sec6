@@ -2,9 +2,12 @@
 Name: Lithasha Thanippuli Appuhamilage 
 Student No: 100942619
 Section: 6
-File: Assignment #4 P3
+File: Assignment #4 P4
 Date: July 31th, 2024
-Description: This is the assignment #4 part 3; which is the JavaScript file of the bouncing balls.
+Description: This is the assignment #4 part 4; which is the JavaScript file of the bouncing balls.
+
+NOTE: professor, I accidentitally did the part 4(sequence annimation) in the mdn web doc without knowing. And i commited it to github.
+This is part 4 according to the rubric. This is the correct part 4 one.
  */
 
 // set up canvas
