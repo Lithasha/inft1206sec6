@@ -1,3 +1,11 @@
+/*
+  Name: Lithasha Thanippuli Appuhamilage 
+  Student No: 100942619
+  Section: 6
+  File: Assignment #5 
+  Date: August 9th, 2024
+  Description: This is the assignment #5 ; which is the JavaScript file for the Accessibility troubleshooting.
+*/
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
