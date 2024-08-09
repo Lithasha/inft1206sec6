@@ -112,7 +112,7 @@ nav.search {
 }
 
 .search input[type="search"] {
-  flex: 4;
+  flex: 3;
 }
 
 .search input[type="submit"] {
